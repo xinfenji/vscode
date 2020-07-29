@@ -7,11 +7,10 @@ int main(){
         const int NUM_QUES=5;
         char c;
         int ques=0,numCorrect=0;
-        cout<<"Enter the"<<NUM_QUES<<"questions test number,
-        end with the 'ENTER'"<<endl;
+        cout<<"Enter the"<<NUM_QUES<<"questions test number end with the 'ENTER'"<<endl;
         while(cin.get(c)){
-                if(c!=\n){
-                        if c=char[ques]{
+                if(c!= '\n'){
+                        if (c=key[ques]){
                                 numCorrect++;
                                 cout<<"@";
 
@@ -23,7 +22,8 @@ int main(){
                        ques++;
 
                 }else{
-                        ques=0,numCrrect=0;
+                        ques=0,numCorrect=0;
+                        cout<<endl;
                         cout<<"The rate of the correct anser is"<<numCorrect/NUM_QUES<<endl;
                 }
         }
