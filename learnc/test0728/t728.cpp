@@ -10,21 +10,22 @@ int main(){
         cout<<"Enter the"<<NUM_QUES<<"questions test number end with the 'ENTER'"<<endl;
         while(cin.get(c)){
                 if(c!= '\n'){
-                        if (c=key[ques]){
+                        if (c==key[ques]){
                                 numCorrect++;
                                 cout<<"@";
 
                         }
                         else
-                        {
+                        
                                 cout<<"*";
-                        }
+                        
                        ques++;
 
                 }else{
-                        ques=0,numCorrect=0;
+                        ques=0;
                         cout<<endl;
-                        cout<<"The rate of the correct anser is"<<numCorrect/NUM_QUES<<endl;
+                        cout<<"The rate of the correct anser is"<<static_cast<float>(numCorrect)/NUM_QUES<<endl;
+                        numCorrect=0;
                 }
         }
         return 0;
