@@ -55,7 +55,7 @@ int main ()
  
    // 以写模式打开文件
    ofstream outfile;
-   outfile.open("afile.dat");
+   outfile.open("bfile.dat");
  
    cout << "Writing to the file" << endl;
    cout << "Enter your name: "; 
